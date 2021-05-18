@@ -22,9 +22,9 @@
 - [Exploit Flow](stakers/exploit-flow.md)
 
 ## Security Team
-- [Intro](stakers/intro.md)
-- [Incentives](stakers/incentives.md)
-- [Payout Mechanism](stakers/payout-mechanism.md)
+- [Intro](security-team/intro.md)
+- [Incentives](security-team/incentives.md)
+- [Payout Mechanism](security-team/payout-mechanism.md)
 
 ## Claims Assessment
 - [TBD](README.md)
