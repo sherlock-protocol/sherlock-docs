@@ -9,6 +9,8 @@
 - [Protocol Premiums](protocols/protocol-premiums.md)
 - [Premium Tokens](protocols/premium-tokens.md)
 - [Premium Payment Mechanics](protocols/premium-payment-mechanics.md)
+- [Pricing](protocols/pricing.md)
+- [Exploit Flow](protocols/exploit-flow.md)
 
 ## Stakers
 - [TBD](README.md)
