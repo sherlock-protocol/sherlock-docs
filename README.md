@@ -1,6 +1,6 @@
 # Introduction to Sherlock
 
-SHERLOCK is a protocol on the Ethereum blockchain that protects Decentralized Finance (DeFi) users from exploits with proprietary security analysis and protocol-level coverage.
+Sherlock is a protocol on the Ethereum blockchain that protects Decentralized Finance (DeFi) users from exploits with proprietary security analysis and protocol-level coverage.
 
 You can find a brief overview of the Sherlock ecosystem below.
 
@@ -29,3 +29,6 @@ In return for these streams, a staker’s funds are at risk of being liquidated 
 1. They are paid a high APY for the risk
 2. They see that the security team’s incentives are aligned with stakers
 3. They are senior to the “first money out” pool and any protocol deductible so staker funds are only at risk once those pools are fully liquidated
+
+### Security Team
+Sherlock’s security team will provide input to the pricing of insurance for protocols (alongside our risk team). The security assessment process for a protocol will depend on what areas of protection the protocol has chosen. Areas of assessment include protocol smart contracts, architecture, upgradability risks, economic risks, protocol dependencies (composability), oracle manipulation risks, admin key risk, processes for shipping secure code, “emergency” mechanisms for limiting hack magnitudes, etc. The security team will be incentivized to set a floor on the insurance pricing because the bulk of their compensation will depend on the dollar value of hacks vs. the price paid by the protocol for insurance over defined time intervals. To put it simply, if stakers in our insurance pool are well-compensated by a protocol’s fees (net of hacks), then the security team gets paid handsomely. If hacks eat away most or all of the fees, the security team responsible for that protocol makes far less. The details around these mechanisms are discussed later in the document. Once a relationship has been initiated with a protocol, our security team will work closely with the protocol’s developers to maintain the security of the protocol as it changes over time. Because of our security team’s incentive alignment, we believe protocols will eventually be able to outsource their security needs to Sherlock instead of needing to manage a security team in-house.
