@@ -1,7 +1,7 @@
 # Table of contents
 
 - [Introduction to Sherlock](README.md)
-- [FAQ](README.md)
+- [FAQ](faq.md)
 - [Glossary](README.md)
 
 ## Protocols
