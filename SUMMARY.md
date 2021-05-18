@@ -6,6 +6,7 @@
 
 ## Protocols
 - [Initiating Coverage](protocols/initiating-coverage.md)
+- [Protocol Premiums](protocols/protocol-premiums.md)
 
 ## Stakers
 - [TBD](README.md)
