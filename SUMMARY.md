@@ -7,6 +7,8 @@
 ## Protocols
 - [Initiating Coverage](protocols/initiating-coverage.md)
 - [Protocol Premiums](protocols/protocol-premiums.md)
+- [Premium Tokens](protocols/premium-tokens.md)
+- [Premium Payment Mechanics](protocols/premium-payment-mechanics.md)
 
 ## Stakers
 - [TBD](README.md)
