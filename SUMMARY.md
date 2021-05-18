@@ -2,7 +2,7 @@
 
 - [Introduction to Sherlock](README.md)
 - [FAQ](faq.md)
-- [Glossary](README.md)
+- [Glossary](glossary.md)
 
 ## Protocols
 - [TBD](README.md)
