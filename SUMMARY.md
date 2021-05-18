@@ -5,7 +5,7 @@
 - [Glossary](glossary.md)
 
 ## Protocols
-- [TBD](README.md)
+- [Initiating Coverage](protocols/initiating-coverage.md)
 
 ## Stakers
 - [TBD](README.md)
