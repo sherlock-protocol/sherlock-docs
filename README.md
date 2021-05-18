@@ -7,6 +7,7 @@ You can find a brief overview of the Sherlock ecosystem below.
 ## Sherlock Ecosystem
 
 There are 3 main participants in the Sherlock ecosystem:
+
 1. Protocols
 2. Stakers
 3. Security team
@@ -18,11 +19,13 @@ Protocols pay Sherlock a small fee in return for repayment in the event of a hac
 
 ### Stakers
 Stakers stake funds into the insurance pool in return for one of the highest APYs in DeFi. Any token on our whitelist of tokens (ETH, DAI, etc.) can be staked into the insurance pool. The APY stakers will receive is made up of 3 streams:
+
 1. Fees from protocol customers (this will likely be biggest)
 2. Interest earned from depositing user stakes on lending protocols (Aave, etc.)
 3. Incentive rewards paid in SHER (Sherlock’s governance token)
 
 In return for these streams, a staker’s funds are at risk of being liquidated if a significant covered event (e.g. hack) occurs at one of the protocols we cover (or possibly a protocol it depends on). Despite the risk, stakers will feel comfortable staking because:
+
 1. They are paid a high APY for the risk
 2. They see that the security team’s incentives are aligned with stakers
 3. They are senior to the “first money out” pool and any protocol deductible so staker funds are only at risk once those pools are fully liquidated
