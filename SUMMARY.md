@@ -27,10 +27,11 @@
 - [Payout Mechanism](security-team/payout-mechanism.md)
 
 ## Claims Assessment
-- [TBD](README.md)
+- [intro](claims-assessment/intro.md)
 
 ## Tokens
-- [TBD](README.md)
+- [SHER](tokens/SHER.md)
+- [SHERX](tokens/SHERX.md)
 
 ## Developers
 - [Deployed Contracts](README.md)
