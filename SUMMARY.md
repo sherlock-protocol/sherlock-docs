@@ -27,7 +27,7 @@
 - [Payout Mechanism](security-team/payout-mechanism.md)
 
 ## Claims Assessment
-- [intro](claims-assessment/intro.md)
+- [Intro](claims-assessment/intro.md)
 
 ## Tokens
 - [SHER](tokens/SHER.md)
