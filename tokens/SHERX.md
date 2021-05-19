@@ -51,6 +51,7 @@ As seen in the example above, SherX holders are exposed to the price fluctuation
 
 #### How Does SHERX Work Without Any Oracles?
 Sherlock is a backstop for exploits at other protocols, so we place heavy emphasis on making our own protocol as secure as possible. We’ve gone out of our way to reduce Sherlock’s reliance on third parties (such as oracles). Instead of using an oracle to get prices, we essentially send them on-chain whenever we update protocol payments. There are two instances when we update protocol payments:
-Weekly
-On a token price move of +/- 10% (technically it’s a $ premium divergence of +/- 10%, TVL is the other variable)
+
+1. Weekly
+2. On a token price move of +/- 10% (technically it’s a $ premium divergence of +/- 10%, TVL is the other variable)
 Because of this, there will be instances when our “on-chain” token prices are not perfectly in-line with current market prices. These periods will not persist longer than a week and the magnitudes of difference should never exceed +/- 10%. But it is worth noting that sometimes a protocol may be paying a bit too much (or too little) and a staker may be receiving a bit too much (or too little). So if the only stream to our pool is sent on-chain as 1 ETH and $3000, then a subsequent 5% downward move in ETH would mean that we are registering stakers as receiving $3000 worth of SherX on that block, but they are only actually receiving $2850 ($3000 * 95%). And a protocol would be “paying” $3000 according to our on-chain data but they would actually only be paying $2850. We don’t expect this to be a major issue but we can tighten our +/- 10% threshold if it becomes one (the tradeoff is the gas cost to Sherlock of updating protocol payments on-chain more frequently).
