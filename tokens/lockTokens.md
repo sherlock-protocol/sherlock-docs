@@ -1,0 +1,1 @@
+A lockToken is simply the "receipt" for staking a certain token with Sherlock. For example, if a staker stakes 100 ETH into Sherlock's insurance pool, the staker would receive a certain amount of lockETH in return. This lockETH represents the staker's proportional stake in the ETH pool. LockETH (or any other lockToken) is fungible and ERC-20 compatible.
