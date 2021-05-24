@@ -5,7 +5,7 @@ Because every DAI token earns interest equally from Aave or Compound, Bob and Al
 
 Sherlock takes advantage of this dynamic in order to calculate SherX owed to each staker. Calculating owed SherX is tricky because the protocol must track whose stake accumulated how much. The amount of SherX paid to the DAI pool per block is not affected by user staking or unstaking like the Aave interest -- it is independent of staker actions.
 
-Because we are dealing with two different token types (DAI and SherX), owed interest must be tracked a bit differently. Sherlock creates a staker mapping and accrues SherX to each staker based on how long their DAI, etc. is staked in the insurance pool. The only actions that can cause changes to the SherX payouts are:
+Because we are dealing with two different token types (DAI and SherX), owed interest must be tracked a bit differently. Sherlock creates a staker mapping and accrues SherX to each staker based on how long their DAI, etc. is staked in a staking pool. The only actions that can cause changes to the SherX payouts are:
 
 1. A stake action
 2. An unstake action
@@ -18,7 +18,7 @@ Therefore stake actions or unstake actions are the only true changes of state fo
 Because different amounts of SherX can be owed to the same amount of lockTokens (100 lockETH could have earned 1 SherX or 100 SherX depending on when it was staked), this presents a challenge for the “fungibility” of lockTokens (and making them ERC-20 compliant), but the only change necessary to keep fungibility is liquidating the SherX balance on transfer events so that every new recipient of lockTokens receives no SherX. The "liquidated" SherX are distributed to the sender of the lockTokens. This function is described in detail in the "Transfer" section under the "Stakers" heading.
 
 #### Mechanics Behind the SHERX Token
-SHERX is an aggregation of all the tokens protocols use (or used in the past) to pay for insurance. It's reasonable to expect many protocols to pay using their governance token but some may also pay in ETH, DAI or other non-governance tokens. Sherlock will also likely contribute SHER to the SherX collateral pool as an added incentive for staking. It’s too early to tell which tokens SherX will be composed of and the exact amounts of each. As more protocols come onboard or payment methods change, the composition of SherX will also change. So if you receive SherX when there are only 3 tokens in the underlying collateral pool, your share of SherX may eventually be composed of far more than 3 tokens as new protocols come on or as payment methods change.
+SHERX is an aggregation of all the tokens protocols use (or used in the past) to pay for coverage. It's reasonable to expect many protocols to pay using their governance token but some may also pay in ETH, DAI or other non-governance tokens. Sherlock will also likely contribute SHER to the SherX collateral pool as an added incentive for staking. It’s too early to tell which tokens SherX will be composed of and the exact amounts of each. As more protocols come onboard or payment methods change, the composition of SherX will also change. So if you receive SherX when there are only 3 tokens in the underlying collateral pool, your share of SherX may eventually be composed of far more than 3 tokens as new protocols come on or as payment methods change.
 
 **How do you make sure a staker gets paid the correct amount of SherX?**
 There are two pieces of data sent on-chain (and updated) for each protocol:

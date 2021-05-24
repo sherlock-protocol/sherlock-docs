@@ -1,4 +1,4 @@
-A staker stakes in Sherlock's insurance pool because they will see an attractive APY made up of 3 streams:
+A staker stakes in Sherlock's staking pools because they will see an attractive APY made up of 3 streams:
 
 1. Fees from protocol customers (this will eventually be the biggest stream)
 2. Interest earned from sweeping funds to Aave, etc.
@@ -10,7 +10,7 @@ In return for these streams, a staker’s funds are at risk of being all or part
 2. They see that the security team’s incentives are aligned with stakers
 3. They are senior to the “first money out” pool and any affected protocol's deductible so staker funds are only at risk once those pools are fully liquidated
 
-A staker will be able to stake in any token on the whitelist of staking tokens (ETH, DAI, etc.). A staker will receive lockTokens (for example lockETH) in return for staking. LockTokens are the tokens Sherlock mints to represent stakes in the insurance pool.
+A staker will be able to stake in any token on the whitelist of staking tokens (ETH, DAI, etc.). A staker will receive lockTokens (for example lockETH) in return for staking. LockTokens are the tokens Sherlock mints to represent stakes in a staking pool.
 
 Sherlock's protocol was designed with two important staking considerations in mind:
 
@@ -19,4 +19,4 @@ Sherlock's protocol was designed with two important staking considerations in mi
 
 #### Why not have stakers stake with SHER (Sherlock's governance token)? This could give SHER utility and prop up the price?
 
-The price of SHER is likely to be highly correlated with exploit events on protocols we actively cover. As soon as there is an exploit at a covered protocol, it’s reasonable to assume SHER’s price will drop. If the insurance pool consists entirely of SHER, it’s likely the USD value of the insurance pool will shrink right at the moment it needs to repay an exploit.
+The price of SHER is likely to be highly correlated with exploit events on protocols we actively cover. As soon as there is an exploit at a covered protocol, it’s reasonable to assume SHER’s price will drop. If the staking pools consist entirely of SHER, it’s likely the USD value of the staking pools will shrink right at the moment it needs to repay an exploit.
