@@ -1,8 +1,8 @@
-Once an agreement has been reached on the cover amount (e.g. $100M) and the price of coverage (e.g. 2%), then Sherlock can calculate the per-block premium that the protocol will pay.
+# Protocol Premiums
 
-Because it’s extremely gas-inefficient to send a payment every block, the protocol will
-initially send two weeks worth of payment up front. The payment for the first week will be
-“drawn down” in Sherlock's internal accounting block-by-block and the payment for the second week will be a buffer, just in case there is some problem with payment once the first week has been drawn down (or a large currency fluctuation occurs against the protocol mid-week).
+Once an agreement has been reached on the cover amount \(e.g. $100M\) and the price of coverage \(e.g. 2%\), then Sherlock can calculate the per-block premium that the protocol will pay.
 
-In this way, a protocol can manage its payment by sending one weeks’
-payment at a time (or a months’ worth of prepay if they want to) after the initial deposit. If a protocol isn’t able to pay for whatever reason, the coverage stops at the block where the payment stream ended.
+Because it’s extremely gas-inefficient to send a payment every block, the protocol will initially send two weeks worth of payment up front. The payment for the first week will be “drawn down” in Sherlock's internal accounting block-by-block and the payment for the second week will be a buffer, just in case there is some problem with payment once the first week has been drawn down \(or a large currency fluctuation occurs against the protocol mid-week\).
+
+In this way, a protocol can manage its payment by sending one weeks’ payment at a time \(or a months’ worth of prepay if they want to\) after the initial deposit. If a protocol isn’t able to pay for whatever reason, the coverage stops at the block where the payment stream ended.
+

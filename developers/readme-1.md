@@ -1,4 +1,4 @@
-# Introduction to Sherlock
+# API Reference
 
 Sherlock is a protocol on the Ethereum blockchain that protects Decentralized Finance \(DeFi\) users from exploits with proprietary security analysis and protocol-level coverage.
 
