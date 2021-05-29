@@ -12,7 +12,11 @@
 
 ### Coverage
 
-* If funds at a protocol are covered, it means that Sherlock will reimburse the funds in the event of an exploit \(as long as the exploit falls into a category that Sherlock agreed to reimburse\). 
+* If funds at a protocol are covered, it means that Sherlock will reimburse the funds in the event of an exploit \(as long as the exploit falls into a category that Sherlock agreed to reimburse\).
+
+### Harvesting
+
+* When a staker stakes tokens into a staking pool, they earn SherX. As SherX accumulates over time, it may make sense to stake the SherX itself (into the SherX staking pool). This will allow the staker to begin to earn SherX on their staked SherX. Harvesting is the act of taking the SherX earned on the original stake and staking it so it can accumulate SherX as well. 
 
 ### lockToken
 
@@ -37,4 +41,3 @@
 ### Unstaking
 
 * The act of removing money from a Sherlock staking pool. This action can only be taken once the cooldown period for the stake has expired.
-
