@@ -2,27 +2,23 @@
 
 ## General
 
-### How does it work?
+### What is Sherlock?
 
-* Sherlock is a risk management platform designed to provide protocols with affordable, high-quality coverage against smart contract hacks. Anyone can stake in our staking pools and we aim to offer the highest risk-adjusted return in DeFi. This is made possible by our expert smart contract security team, who reviews and prices coverage for every protocol we take on and has “skin-in-the-game” alongside our stakers.
+* Sherlock is a risk management platform designed to provide protocols with affordable, reliable coverage against smart contract exploits. Anyone can stake in our staking pools and we aim to offer the highest risk-adjusted return in DeFi. This is made possible by our expert smart contract security team, who reviews and prices coverage for every protocol we take on and has “skin-in-the-game” alongside our stakers.
 
 ### How is it different from other risk management protocols?
 
-* We think existing solutions are unpopular for two major reasons: 1\) Poor user experience and 2\) high prices. 1\) Nobody likes buying exploit coverage which is why we don’t make you do it. We cover protocols wholesale so users don’t need to worry about it. 2\) Existing protocols outsource pricing by either making users decide which protocols are safe or by relying on old audits. We have a team of expert smart contract security analysts who price our coverage and have “skin in the game” alongside our stakers.
-
-### Why are audits dead?
-
-* A major reason many protocols pay for expensive audits is to prevent user funds from being stolen. Over the last few months, it has become increasingly clear that audits are not a perfect solution for preventing hacks. We don’t think there is a perfect solution to preventing hacks. Instead, we think the risk of loss should be shifted from unsuspecting users to investors who are looking for a favorable risk-adjusted return. That’s why we built this protocol.
+* We think existing solutions have failed to scale for two major reasons: 1\) Poor user experience and 2\) high prices. 1\) DeFi users don't like buying exploit coverage which is why we don’t make you do it. We cover protocols wholesale so users don’t need to worry. 2\) Existing protocols outsource pricing by either making users decide which protocols are safe or by relying on utilization. We have a team of expert smart contract security analysts who price our coverage and have “skin in the game” alongside our stakers.
 
 ### How does staking work?
 
-* Stakers stake into the Sherlock staking pools and receive a yield based on protocol fees and current lending protocol rates. These funds cover the risk of smart contract hacks among our partner protocols and can be slashed in the event of a hack. There is currently a 3-day “unlocking” period to withdraw funds from the pool.
+* A user stakes into the Sherlock staking pools and receives a market-leading yield comprised of protocol premiums, SHER token incentives, and lending platform rates. These pools cover the risk of smart contract exploits among our partner protocols and can be slashed in the event of an exploit. There is currently a 7-day cooldown period to unstake funds from the pool.
 
 ### How can I get coverage as a protocol?
 
-* We are currently in a closed beta with a select number of protocols. Please email us at auditsrdead@gmail.com to join the waitlist.
+* We are currently in beta with a select number of protocols. Please email us at contact@sherlock.xyz to join the waitlist.
 
-### How do I start using it on Kovan?
+### How do I start using it on Goerli?
 
-* TBD
-
+* Get ETH on Goerli [here](https://faucet.goerli.mudit.blog/)
+* Get DAI by going to [Compound](https://app.compound.finance/) (on Goerli) --> Select DAI on Supply Markets --> Select Withdraw tab --> Scroll down and click "Faucet" at the very bottom of the popup
