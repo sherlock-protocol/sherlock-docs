@@ -40,6 +40,6 @@
 
 ## Developers
 
-* [Deployed Contracts](developers/readme.md)
-* [API Reference](developers/readme-1.md)
+* [Deployed Contracts](developers/deployed-contracts.md)
+* [Contract Reference](developers/contract-reference.md)
 
