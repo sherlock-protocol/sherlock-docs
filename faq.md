@@ -21,4 +21,4 @@
 ### How do I start using it on Goerli?
 
 * Get ETH on Goerli [here](https://faucet.goerli.mudit.blog/)
-* Get DAI by going to [Compound](https://app.compound.finance/) (on Goerli) --> Select DAI on Supply Markets --> Select Withdraw tab --> Scroll down and click "Faucet" at the very bottom of the popup
+* Get USDC from [Sherlock](https://goerli.sherlock.xyz/faucet) using the "Faucet" tab at the top right and entering your wallet address.
