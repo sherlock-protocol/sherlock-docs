@@ -37,9 +37,10 @@
 
 * [SHER](tokens/sher.md)
 * [SHERX](tokens/sherx.md)
+* [lockTokens](tokens/lockTokens.md)
+
 
 ## Developers
 
 * [Deployed Contracts](developers/deployed-contracts.md)
 * [Contract Reference](developers/contract-reference.md)
-

@@ -18,6 +18,14 @@
 
 * We are currently in beta with a select number of protocols. Please email us at contact@sherlock.xyz to join the waitlist.
 
+### Is cover for a protocol always fully collateralized?
+
+* Not necessarily. One of the main powers of insurance is using diversification to limit the need for full collateralization. This is what allows insurance to be affordable in traditional markets. We expect the value staked into Sherlock's staking pools to be less than the total funds that Sherlock is covering. That said, we expect the staking pool to be significantly larger than the size of the coverage at any one protocol.
+
+* So a single exploit event, even if it drains all of the funds of the covered protocol, should always be able to be 100% reimbursed.
+
+* The complication arises if an exploit were to occur that affected multiple protocols and drained nearly all of the funds of multiple protocols. In this situation, depending on leverage, Sherlock may not be able to reimburse the exploits 100 cents on the dollar. However, Sherlock is designed to manage the risk of multiple protocols being affected by the same type of exploit, consequently, it seems like it would constitute an extremely rare event to see multiple covered protocols hacked for nearly all of their TVL at the same time -- but it is theoretically possible. 
+
 ### How do I start using it on Goerli?
 
 * Get ETH on Goerli [here](https://faucet.goerli.mudit.blog/)
