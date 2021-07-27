@@ -16,7 +16,7 @@
 
 ### Harvesting
 
-* When a staker stakes tokens into a staking pool, they earn SherX. As SherX accumulates over time, it may make sense to stake the SherX itself (into the SherX staking pool). This will allow the staker to begin to earn SherX on their staked SherX. Harvesting is the act of taking the SherX earned on the original stake and staking it so it can accumulate SherX as well. 
+* When a staker stakes tokens into a staking pool, they earn SherX. As SherX accumulates over time, it may make sense to stake the SherX itself (into the SherX staking pool). This will allow the staker to begin to earn SherX on their staked SherX. Harvesting is the act of taking the SherX earned on the original stake and staking it so it can accumulate SherX as well.
 
 ### lockToken
 
@@ -25,6 +25,10 @@
 ### Premium
 
 * The amount a protocol pays Sherlock. In return, Sherlock reimburses covered exploits experienced by the protocol.
+
+### Recover (refers to unstakeWindowExpiry() function)
+
+* When the unstake window expires, a user needs to "recover" their position. This is because the user has transferred their lockTokens to Sherlock in order to prepare for unstake. If an unstake does not occur in the window, a user must call "recover" in order to get their lockTokens back and continue accruing interest. Importantly, once this function has been called, the tokens are still in the staking pool and it is necessary to activate the cooldown period again in order to attempt another unstake. 
 
 ### SHER
 
