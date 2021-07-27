@@ -2,7 +2,7 @@
 
 ## Sherlock Terminology
 
-### Buffer for Stakers / "First Money Out" Pool <a id="buffer-for-stakers"></a>
+### "First Money Out" Pool <a id="buffer-for-stakers"></a>
 
 * This is the pool of tokens that needs to be completely liquidated \(in the event of a hack on one of our covered protocols\) before any staker tokens can be used to pay out the hack. This pool of money is "protection" for stakers. The entire pool is "junior" to the staking pools in terms of liquidation priority. Most or all of the tokens in this pool will be contributed by the Sherlock protocol as an added protection for stakers.
 
@@ -26,9 +26,11 @@
 
 * The amount a protocol pays Sherlock. In return, Sherlock reimburses covered exploits experienced by the protocol.
 
-### Recover (refers to unstakeWindowExpiry() function)
+### Recover
 
-* When the unstake window expires, a user needs to "recover" their position. This is because the user has transferred their lockTokens to Sherlock in order to prepare for unstake. If an unstake does not occur in the window, a user must call "recover" in order to get their lockTokens back and continue accruing interest. Importantly, once this function has been called, the tokens are still in the staking pool and it is necessary to activate the cooldown period again in order to attempt another unstake. 
+* When the unstake window expires, a user needs to "recover" their position. This is because the user has transferred their lockTokens to Sherlock in order to prepare for unstake. If an unstake does not occur in the window, a user must call "recover" in order to get their lockTokens back and continue accruing interest. Importantly, once this function has been called, the tokens are still in the staking pool and it is necessary to activate the cooldown period again in order to attempt another unstake.
+
+Note for developers: Recover actually refers to the unstakeWindowExpiry() function in our smart contracts. 
 
 ### SHER
 
