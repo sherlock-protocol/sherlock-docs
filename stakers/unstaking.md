@@ -1,4 +1,6 @@
-# Unstaking
+# Unstaking Mechanics
+
+### Unstake
 
 Once the cooldown period ends, a 2-day window will open where the staker can unstake their lockTokens \(both the original staked token and the staked SherX\). They will call the unstake function which will receive their lockTokens and lockSherX and transfer the initial staked tokens \(plus interest from Aave, Compound, etc.\) and the SherX interest earned.
 
