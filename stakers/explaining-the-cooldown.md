@@ -1,4 +1,4 @@
-# Unstake Cooldown
+# Explaining the Cooldown
 
 A staker will not be able to unstake immediately. This is because it will take Sherlock time to recognize, diagnose and pay out a hack. A staker could easily unstake their stake during this time as soon as they hear about the hack. Because of this dynamic, a cooldown period needs to be implemented before a staker can unstake. Currently the cooldown period is 7 days. So if a staker wants to unstake, they begin the process by activating the cooldown. This will start a 7-day timer in which a staker’s funds no longer earn interest \(even though they are still exposed to hacks during this time\).
 

@@ -17,7 +17,7 @@
 
 * [Overview](stakers/overview.md)
 * [Interest Streams](stakers/interest-streams.md)
-* [Unstake Cooldown](stakers/unstake-cooldown.md)
+* [Explaining the Cooldown](stakers/explaining-the-cooldown.md)
 * [Harvest](stakers/harvest.md)
 * [Transfer](stakers/transfer.md)
 * [Activate Cooldown](stakers/activate-cooldown.md)
@@ -39,7 +39,6 @@
 * [SHER](tokens/sher.md)
 * [SHERX](tokens/sherx.md)
 * [lockTokens](tokens/lockTokens.md)
-
 
 ## Developers
 
