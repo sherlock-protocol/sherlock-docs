@@ -20,7 +20,8 @@
 * [Unstake Cooldown](stakers/unstake-cooldown.md)
 * [Harvest](stakers/harvest.md)
 * [Transfer](stakers/transfer.md)
-* [Activate Cooldown and Unstake](stakers/activate-cooldown-and-unstake.md)
+* [Activate Cooldown](stakers/activate-cooldown.md)
+* [Unstaking](stakers/unstaking.md)
 * [Exploit Flow](stakers/exploit-flow.md)
 
 ## Security Team

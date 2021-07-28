@@ -1,9 +1,3 @@
-# Activate Cooldown and Unstake
+# Activate Cooldown
 
 Because there is a 7-day waiting period before a staker can withdraw \(i.e. unstake\) their stake \(lockToken i.e. lockETH\) and owed interest \(SherX\), a staker must first call activateCooldown to start the timer on the 7-day waiting period. When the activateCooldown function is called, Sherlock mints the SherX a user is owed and deposits it in the SherX staker pool. This happens as a by-product of transferring the staker’s lockTokens back to Sherlock. The staker then receives lockSherX tokens. In a separate Solidity contract \(to reduce complexity in the main contract\), it is possible to immediately trigger an activateCooldown of the lockSherX in the same block as the activateCooldown of the original lockToken \(lockETH, etc.\). This allows a staker to receive their lockToken and their SherX interest on the same block when they call the unstake function.
-
-Once the cooldown period ends, a 2-day window will open where the staker can unstake their lockTokens \(both the original staked token and the staked SherX\). They will call the unstake function which will receive their lockTokens and lockSherX and transfer the initial staked tokens \(plus interest from Aave, Compound, etc.\) and the SherX interest earned.
-
-### Recover
-
-If a user does not unstake their lockTokens during the 2-day unstake window, the user must now call "recover" in order to get their lockTokens back from the contract (and continue accruing interest). After recover is called, the lockTokens are returned to the user and a new cooldown must be activated in order to try to unstake the funds again.
