@@ -32,7 +32,7 @@
 
 ## Claims Assessment
 
-* [Intro](claims-assessment/intro.md)
+* [Deciding on Payouts](claims-assessment/deciding-on-payouts.md)
 
 ## Tokens
 
