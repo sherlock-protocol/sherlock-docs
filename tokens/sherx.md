@@ -1,8 +1,7 @@
 # SHERX
 
-SHERX is essentially tokenized "interest" payments to stakers from protocols. Protocols can pay premiums to Sherlock in an assortment of tokens. Instead of paying interest to stakers in 20 different tokens, SHERX is essentially a "packaged" version of the 20 tokens being paid as interest.
+In the guarded launch phase of Sherlock, SHERX does not have a ton of value-add. Because all protocol premiums will be paid in USDC, SHERX does not contribute to the gas efficiency of paying stakers in the same way it would have if many tokens were being paid in as premiums by protocols.
 
-It would be very gas-intensive to pay stakers in many different token types. As an alternative, the SHERX token was created to represent the many different token types paid by protocols. This way, stakers are transferred one token \(SHERX\) instead of 10 or 20 different tokens.
+Therefore, in the guarded launch, SHERX is simply the vehicle which represents the owed underlying USDC interest. At any time, SHERX can be redeemed for the proportional amount of underlying USDC.
 
-**Important:** SHERX will always be redeemable for its underlying collateral \(the 10 or 20 different tokens\) so it will always have intrinsic value.
-
+**Important:** SHERX will always be redeemable for its proper underlying collateral so it will always have intrinsic value. All underlying funds are held by the Sherlock protocol to ensure this. 
