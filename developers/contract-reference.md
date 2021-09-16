@@ -8,7 +8,7 @@ Contract is meant to be included as a facet in the diamond
 Storage library is used
 Storage pointer is calculated based on last \_token argument
 
-### `getCooldownFee(contract IERC20 _token) → uint256`
+### `getCooldownFee(contract IERC20 _token) → uint32`
 
 Returns the fee used on `_token` cooldown activation
 
@@ -18,9 +18,9 @@ Returns the fee used on `_token` cooldown activation
 
 #### Return Values:
 
-- Cooldown fee scaled by 10\*\*18
+- Cooldown fee scaled by type(uint32).max
 
-### `getSherXWeight(contract IERC20 _token) → uint256`
+### `getSherXWeight(contract IERC20 _token) → uint16`
 
 Returns SherX weight for `_token`
 
@@ -30,7 +30,7 @@ Returns SherX weight for `_token`
 
 #### Return Values:
 
-- SherX weight scaled by 10\*\*18
+- SherX weight scaled by type(uint16).max
 
 ### `getGovPool(contract IERC20 _token) → address`
 
@@ -200,7 +200,7 @@ Return total premium per block that whitelisted protocols are accrueing as debt
 
 - Total amount of premium
 
-### `getPremiumLastPaid(contract IERC20 _token) → uint256`
+### `getPremiumLastPaid(contract IERC20 _token) → uint40`
 
 Returns block debt was last accrued.
 
@@ -252,9 +252,21 @@ Returns initial active unstaking enty for `_staker`
 
 - Initial ID of unstaking entry
 
+### `getUnactivatedStakersPoolBalance(contract IERC20 _token) → uint256`
+
+Returns amount staked in `_token` that is not included in a yield strategy
+
+#### Parameters:
+
+- `_token`: Token used
+
+#### Return Values:
+
+- Amount staked
+
 ### `getStakersPoolBalance(contract IERC20 _token) → uint256`
 
-Returns amount staked in `_token`
+Returns amount staked in `_token` including yield strategy
 
 #### Parameters:
 
@@ -380,7 +392,7 @@ Returns SHERX distributed per block when staking `_amount` of `_token`
 
 - SHERX to be distrubuted if staked
 
-### `getSherXLastAccrued(contract IERC20 _token) → uint256`
+### `getSherXLastAccrued(contract IERC20 _token) → uint40`
 
 Returns block SHERX was last accrued to `_token`
 
@@ -444,13 +456,13 @@ Current exchange rate from `_token` to lockToken using `_amount`
 
 - Current exchange rate
 
-### `setCooldownFee(uint256 _fee, contract IERC20 _token)`
+### `setCooldownFee(uint32 _fee, contract IERC20 _token)`
 
 Set `_fee` used for activating cooldowns on `_token`
 
 #### Parameters:
 
-- `_fee`: Fee scaled by 10\*\*18
+- `_fee`: Fee scaled by type(uint32).max
 
 - `_token`: Token used
 
@@ -597,7 +609,7 @@ Returns the compensation address for the Watsons
 
 - Watsons address
 
-### `getWatsonsSherXWeight() → uint256`
+### `getWatsonsSherXWeight() → uint16`
 
 Returns the weight for the Watsons compensation
 
@@ -605,7 +617,7 @@ Returns the weight for the Watsons compensation
 
 - Watsons compensation weight
 
-### `getWatsonsSherxLastAccrued() → uint256`
+### `getWatsonsSherxLastAccrued() → uint40`
 
 Returns the last block number the SherX was accrued to the Watsons
 
@@ -615,11 +627,11 @@ Returns the last block number the SherX was accrued to the Watsons
 
 ### `getWatsonsSherXPerBlock() → uint256`
 
-Returns the last block number the SherX was accrued to the Watsons
+Returns the amount of SherX the Watsons receive per block
 
 #### Return Values:
 
-- Block number
+- Number of SherX per block
 
 ### `getWatsonsUnmintedSherX() → uint256`
 
@@ -629,7 +641,7 @@ Returns the total amount of uminted SherX for the Watsons
 
 - SherX to be minted
 
-### `getUnstakeWindow() → uint256`
+### `getUnstakeWindow() → uint40`
 
 Returns the window of opportunity in blocks to unstake funds
 Cooldown period has to be expired first to start the unstake window
@@ -638,7 +650,7 @@ Cooldown period has to be expired first to start the unstake window
 
 - Amount of blocks
 
-### `getCooldown() → uint256`
+### `getCooldown() → uint40`
 
 Returns the cooldown period in blocks
 After the cooldown period funds can be unstaked
@@ -700,6 +712,30 @@ Returns address responsible on behalf of the protocol
 
 - Address of account
 
+### `getMaxTokensSherX() → uint8`
+
+Get the maximum of tokens to be in the SherX array
+
+#### Return Values:
+
+- Max maximum amount of tokens
+
+### `getMaxTokensStaker() → uint8`
+
+Get the maximum of tokens to be in the Staker array
+
+#### Return Values:
+
+- Max maximum amount of tokens
+
+### `getMaxProtocolPool() → uint8`
+
+Get the maximum of protocol to be in a single pool
+
+#### Return Values:
+
+- Max maximum amount of protocol
+
 ### `setInitialGovMain(address _govMain)`
 
 Set initial main governance address
@@ -724,7 +760,7 @@ Set the compensation address for the Watsons
 
 - `_watsons`: Address for Watsons
 
-### `setUnstakeWindow(uint256 _unstakeWindow)`
+### `setUnstakeWindow(uint40 _unstakeWindow)`
 
 Set unstake window
 
@@ -732,7 +768,7 @@ Set unstake window
 
 - `_unstakeWindow`: Unstake window in amount of blocks
 
-### `setCooldown(uint256 _period)`
+### `setCooldown(uint40 _period)`
 
 Set cooldown period
 
@@ -784,7 +820,7 @@ Remove protocol from the Sherlock registry
 
 - `_protocol`: Protocol identifier
 
-### `tokenInit(contract IERC20 _token, address _govPool, contract ILock _lock, bool _protocolPremium)`
+### `tokenInit(contract IERC20 _token, address _govPool, contract ILock _lock, bool _isProtocolPremium)`
 
 Initialize a new token
 
@@ -796,7 +832,7 @@ Initialize a new token
 
 - `_lock`: Corresponding lock token, indicating staker token
 
-- `_protocolPremium`: Boolean indicating if token should be registered as protocol payment
+- `_isProtocolPremium`: Boolean indicating if token should be registered as protocol payment
 
 ### `tokenDisableStakers(contract IERC20 _token, uint256 _index)`
 
@@ -838,6 +874,30 @@ Remove a token from storage
 
 - `_token`: Address of the token
 
+### `setMaxTokensSherX(uint8 _max)`
+
+Set the maximum of tokens to be in the SherX array
+
+#### Parameters:
+
+- `_max`: maximum amount of tokens
+
+### `setMaxTokensStaker(uint8 _max)`
+
+Set the maximum of tokens to be in the Staker array
+
+#### Parameters:
+
+- `_max`: maximum amount of tokens
+
+### `setMaxProtocolPool(uint8 _max)`
+
+Set the maximum of protocol to be in a single pool
+
+#### Parameters:
+
+- `_max`: maximum amount of protocol
+
 ## IGovDev
 
 This contract is used during development for upgrading logic
@@ -859,6 +919,10 @@ Transfer dev role to other account or renounce
 #### Parameters:
 
 - `_govDev`: New dev address
+
+### `renounceGovDev()`
+
+Renounce dev role
 
 ### `updateSolution(struct IDiamondCut.FacetCut[] _diamondCut, address _init, bytes _calldata)`
 
@@ -1283,7 +1347,7 @@ Function called by lockTokens before transfer
 
 Set initial SHERX distribution to Watsons
 
-### `setWeights(contract IERC20[] _tokens, uint256[] _weights, uint256 _watsons)`
+### `setWeights(contract IERC20[] _tokens, uint16[] _weights, uint256 _watsons)`
 
 Set SHERX distribution
 
@@ -1417,7 +1481,7 @@ Sets up the metadata and initial supply. Can be called by the contract owner
 
 - `_symbol`: Symbol of the token
 
-### `increaseApproval(address _spender, uint256 _amount) → bool`
+### `increaseAllowance(address _spender, uint256 _amount) → bool`
 
 Increase the amount of tokens another address can spend
 
@@ -1427,7 +1491,7 @@ Increase the amount of tokens another address can spend
 
 - `_amount`: Amount to increase by
 
-### `decreaseApproval(address _spender, uint256 _amount) → bool`
+### `decreaseAllowance(address _spender, uint256 _amount) → bool`
 
 Decrease the amount of tokens another address can spend
 
