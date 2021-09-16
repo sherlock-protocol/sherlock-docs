@@ -2,18 +2,20 @@
 
 > :warning: Don't use the Contract functions in the Etherscan contract tab. This will not result in expected behaviour as Sherlock is using a proxy.
 
-Sherlock is currently only deployed Goerli.
+Sherlock is currently only deployed Kovan.
 
-## Goerli
+## Kovan
 
 | Name                                                                                                          |                                                           Address                                                            |
 | ------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------: |
-| [Sherlock](https://github.com/mudgen/diamond-2/blob/master/contracts/Diamond.sol)                             | [0xE6f4e3af0d5d9BBC77d2e4b69c5F589d0Fc7b182](https://goerli.etherscan.io/address/0xE6f4e3af0d5d9BBC77d2e4b69c5F589d0Fc7b182) |
-| [Gov](https://github.com/sherlock-protocol/sherlock-v1-core/blob/main/contracts/facets/Gov.sol)               | [0xBcbDD22a610Ba01c403b047712A14Aa83898d9D6](https://goerli.etherscan.io/address/0xBcbDD22a610Ba01c403b047712A14Aa83898d9D6) |
-| [GovDev](https://github.com/sherlock-protocol/sherlock-v1-core/blob/main/contracts/facets/GovDev.sol)         | [0x2bC851ae733E1c515ef8b1aCC3d2a5cD284E4aF5](https://goerli.etherscan.io/address/0x2bC851ae733E1c515ef8b1aCC3d2a5cD284E4aF5) |
-| [Manager](https://github.com/sherlock-protocol/sherlock-v1-core/blob/main/contracts/facets/Manager.sol)       | [0x64A191dbd38Ce00467Cee52Eec757EB54F769083](https://goerli.etherscan.io/address/0x64A191dbd38Ce00467Cee52Eec757EB54F769083) |
-| [Payout](https://github.com/sherlock-protocol/sherlock-v1-core/blob/main/contracts/facets/Payout.sol)         | [0x2eEEF90E1a83E77c45C7e8088528eb5A16db009d](https://goerli.etherscan.io/address/0x2eEEF90E1a83E77c45C7e8088528eb5A16db009d) |
-| [PoolBase](https://github.com/sherlock-protocol/sherlock-v1-core/blob/main/contracts/facets/PoolBase.sol)     | [0x1C4EC216a835258ABbe812307B55dCd67a68856a](https://goerli.etherscan.io/address/0x1C4EC216a835258ABbe812307B55dCd67a68856a) |
-| [SherX](https://github.com/sherlock-protocol/sherlock-v1-core/blob/main/contracts/facets/SherX.sol)           | [0x04771C4F17684054C924C8103e3390CE30f9b545](https://goerli.etherscan.io/address/0x04771C4F17684054C924C8103e3390CE30f9b545) |
-| [SherXERC20](https://github.com/sherlock-protocol/sherlock-v1-core/blob/main/contracts/facets/SherXERC20.sol) | [0x2d15630b519BD4aA2431D23C7C1465ae40964D75](https://goerli.etherscan.io/address/0x2d15630b519BD4aA2431D23C7C1465ae40964D75) |
-| [PoolOpen](https://github.com/sherlock-protocol/sherlock-v1-core/blob/main/contracts/facets/PoolOpen.sol)     | [0x675b17EdCc7323E2491B0320DEAC829cD051a1Cc](https://goerli.etherscan.io/address/0x675b17EdCc7323E2491B0320DEAC829cD051a1Cc) |
+| [Sherlock](https://github.com/mudgen/diamond-2/blob/master/contracts/Diamond.sol)                             | [0xAc8075751E250dBC5F09e639E75FeCa7656eeD3c](https://kovan.etherscan.io/address/0xAc8075751E250dBC5F09e639E75FeCa7656eeD3c) |
+| [Gov](https://github.com/sherlock-protocol/sherlock-v1-core/blob/main/contracts/facets/Gov.sol)               | [0x9796Fd72947aBB3C89E7Edf8A5ed58F731A6bA97](https://kovan.etherscan.io/address/0x9796Fd72947aBB3C89E7Edf8A5ed58F731A6bA97) |
+| [GovDev](https://github.com/sherlock-protocol/sherlock-v1-core/blob/main/contracts/facets/GovDev.sol)         | [0xf93ad2A54156Ac353165a6533CC4051C18FC7512](https://kovan.etherscan.io/address/0xf93ad2A54156Ac353165a6533CC4051C18FC7512) |
+| [Manager](https://github.com/sherlock-protocol/sherlock-v1-core/blob/main/contracts/facets/Manager.sol)       | [0xcb2c9934db15132f0de2272eAc885a53cB85660A](https://kovan.etherscan.io/address/0xcb2c9934db15132f0de2272eAc885a53cB85660A) |
+| [Payout](https://github.com/sherlock-protocol/sherlock-v1-core/blob/main/contracts/facets/Payout.sol)         | [0xBf3fDD0867a0c6a5F2ce62E61E16baa49D4b90f9](https://kovan.etherscan.io/address/0xBf3fDD0867a0c6a5F2ce62E61E16baa49D4b90f9) |
+| [PoolBase](https://github.com/sherlock-protocol/sherlock-v1-core/blob/main/contracts/facets/PoolBase.sol)     | [0xd12b536354CE093cB9975E818C8877A21FbD0203](https://kovan.etherscan.io/address/0xd12b536354CE093cB9975E818C8877A21FbD0203) |
+| [SherX](https://github.com/sherlock-protocol/sherlock-v1-core/blob/main/contracts/facets/SherX.sol)           | [0x2d783Bfa056FF825cb5E4088C61B74Ef24A55C56](https://kovan.etherscan.io/address/0x2d783Bfa056FF825cb5E4088C61B74Ef24A55C56) |
+| [SherXERC20](https://github.com/sherlock-protocol/sherlock-v1-core/blob/main/contracts/facets/SherXERC20.sol) | [0x9709c1922a1aac1E096Dc542cB8EBDEBcb9C1147](https://kovan.etherscan.io/address/0x9709c1922a1aac1E096Dc542cB8EBDEBcb9C1147) |
+| [PoolStrategy](https://github.com/sherlock-protocol/sherlock-v1-core/blob/main/contracts/facets/PoolStrategy.sol)     | [0x813f3577B7e4373E085270dA6Cd4720f7b36D151](https://kovan.etherscan.io/address/0x813f3577B7e4373E085270dA6Cd4720f7b36D151) |
+| [PoolDevOnly](https://github.com/sherlock-protocol/sherlock-v1-core/blob/main/contracts/facets/PoolDevOnly.sol)     | [0x1f232700569982D6D224fC2C3E1f02402D1F6293](https://kovan.etherscan.io/address/0x1f232700569982D6D224fC2C3E1f02402D1F6293) |
+| [PoolOpen](https://github.com/sherlock-protocol/sherlock-v1-core/blob/main/contracts/facets/PoolOpen.sol)     | [0x3ab35b1a34f7c0f4aa755ff7a77e048800fcac5d](https://kovan.etherscan.io/address/0x3ab35b1a34f7c0f4aa755ff7a77e048800fcac5d) |

@@ -24,9 +24,9 @@
 
 * So a single exploit event, even if it drains all of the funds of the covered protocol, will always be able to be 100% reimbursed.
 
-* A complication arises if an exploit were to occur that affected multiple protocols and drained nearly all of the funds of multiple protocols. In this situation, depending on the capital efficiency of Sherlock, Sherlock may not be able to reimburse the exploits 100 cents on the dollar. However, Sherlock is designed to manage the risk of multiple protocols being affected by the same type of exploit, consequently, it seems like it would constitute an extremely rare event to see multiple covered protocols hacked for nearly all of their TVL at the same time -- but it is theoretically possible. 
+* A complication arises if an exploit were to occur that affected multiple protocols and drained nearly all of the funds of multiple protocols. In this situation, depending on the capital efficiency of Sherlock, Sherlock may not be able to reimburse the exploits 100 cents on the dollar. However, Sherlock is designed to manage the risk of multiple protocols being affected by the same type of exploit, consequently, it seems like it would constitute an extremely rare event to see multiple covered protocols hacked for nearly all of their TVL at the same time -- but it is theoretically possible.
 
-### How do I start using it on Goerli?
+### How do I start using it on Kovan?
 
-* Get ETH on Goerli [here](https://faucet.goerli.mudit.blog/)
-* Get USDC from [Sherlock](https://goerli.sherlock.xyz/faucet) using the "Faucet" tab at the top right and entering your wallet address.
+* Get ETH on Kovan [here](https://github.com/kovan-testnet/faucet)
+* Get USDC from [AAVE](https://testnet.aave.com/faucet)
